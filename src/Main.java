@@ -40,8 +40,6 @@ public class Main {
         System.out.println("D - Delete an item from the list");
         System.out.println("P - Print (i.e. display) the list");
         System.out.println("Q - Quit the program");
-
-        System.out.println("\nCurrent list:");
     }
 
     //Add an item to array using list.add
@@ -72,6 +70,7 @@ public class Main {
             System.out.println("The list is empty.");
             return;
         }
+        System.out.println("\nCurrent list:");
         //Print list, use list.size and list.get
         for (int i = 0; i < list.size(); i++) {
             System.out.println(i + ". " + list.get(i));
